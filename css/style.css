@@ -1,0 +1,275 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Monoton', cursive;
+            font-size: 16px;
+            line-height: 1.35;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            color: white;
+        }
+        
+        body {
+            height: 100%;
+            background: black;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+        }
+    
+        li {
+            display: inline;
+            float: left;
+        }
+        
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: center;
+            padding: 15px 20px;
+           / font-family: 'Monoton', cursive;
+        }
+        
+        li a:hover {
+            background-color: white;
+        }
+        
+        .gallery {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: black;
+            z-index: -1;
+            animation: galleryAnim 20s infinite linear;
+            background: url(../images/one-republic.jpeg) no-repeat;
+                background-size: cover;
+            opacity: .5;
+        }
+        
+        @keyframes galleryAnim {
+            0 {
+                background: url(../images/one-republic.jpeg) no-repeat;
+                background-size: cover;
+            }
+            25% {
+                background: url(../images/coldplay.jpg) no-repeat;
+                background-size: cover;
+            }
+            50% {
+                background: url(../images/script-the-50696de8c9eb4.jpg) no-repeat;
+                background-size: cover;
+            }
+            75% {
+                background: url(../images/agreatbigworld.jpeg) no-repeat;
+                background-size: cover;
+            }
+            100% {
+                background: url(../images/mat-kearney-4f1740320acdc.jpg) no-repeat;
+                background-size: cover;
+            }
+        }
+        
+        .section {
+            position: absolute;
+            width: 100%;
+            max-width: 500px;
+            height: 230px;
+            margin: 0 auto;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: -115px;
+        }
+       
+        h1 {
+            font-size: 3rem;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .countdown {
+            margin-top: 40px;
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 90px;
+            background: black;
+        }
+
+        .num {
+            position: relative;
+            float: left;
+            width: 33.33%;
+            height: 100%;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .num:not(:last-of-type) {
+             border-right: 1px solid #fff;
+        }
+
+        .num__value {
+            font-size: 1.5rem;
+        }
+
+        .mini {
+            position: relative;
+                float: right;
+            width: 300px;
+            height: 50px;
+        }
+
+        .mini .countdown {
+            height: 51px;
+            margin-top: 0;
+        }
+
+        .mini .num {
+            padding-top: 8px;
+        }
+
+        .mini .num__value {
+            font-size: 1rem;
+        }
+
+        .mini .num__type {
+            font-size: .675rem;
+        }
+
+        footer {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            left: 0;
+            bottom: 0;
+            background: black;
+            text-align: center;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: auto;
+            float: left;
+            background: url(../images/starry-night2.jpg) no-repeat;
+            background-size: cover;
+            text-align: center;
+            margin-top: 51px;
+            padding: 20px 0;
+            font-size: 3rem;
+        }   
+
+        .faveartists {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto;
+            
+        }
+
+        .faveartists_block {
+            position: relative;
+            width: 100%;
+            height: auto;
+            float: left;
+            padding: 20px 0;
+        }
+
+        .faveartists img {
+            width: 150px;
+            margin: 0 20px;
+        }
+
+        .faveartists a {
+            float: left;
+            font-size: 1.5rem;
+        }
+       
+        .artistnum {
+            font-size: 3rem;
+            opacity: .5;
+        }
+
+        .b-2 {
+            padding-left: 60px;
+        }
+        
+        a.r {
+            float: right;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1;
+            text-align: center;
+            font-family: 'Audiowide', cursive;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            text-align: center;
+            font-family: 'Audiowide', cursive;
+        }
+
+        h5 {
+            font-size: 1rem;
+            font-family: 'Audiowide', cursive;
+            text-align: center;
+        }
+
+        .eachperson {
+            position: relative;
+            width: 100%;
+            max-width: 800px; 
+            height: auto;
+            margin: 0 auto;
+            
+        }
+
+        .eachperson_block {
+            position: relative;
+            width: 100%;
+            height: auto;
+            float: left;
+            padding: 20px 0;
+        }
+
+        .eachperson img {
+            width: 480px;
+            height: auto;
+            margin: 0;
+        }
+
+        .eachperson a {
+            float: left;
+            font-size: 1.5rem;
+        }
+
+        .eachperson audio {
+            margin-left: 20px;
+            margin-top: 30px;
+            border: solid;
+            border-color: darkgray;
+        }
